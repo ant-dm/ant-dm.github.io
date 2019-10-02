@@ -487,7 +487,9 @@ var pJS = function(tag_id, params){
     pJS.canvas.ctx.closePath();
 
     if (pJS.particles.shape.stroke.color instanceof Array){
-      console.log("auto instanceof Car");
+      console.log("array!");
+    }else {
+      console.log("Not!");
     }
 
     if(pJS.particles.shape.stroke.width > 0){

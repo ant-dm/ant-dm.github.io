@@ -16,7 +16,7 @@ particlesJS('particles-js',
           "type": "triangle",
           "stroke": {
             "width": 1,
-            "color": "#00ffff"
+            "color": ["#00ffff"]
           },
           "polygon": {
             "nb_sides": 5
@@ -56,7 +56,7 @@ particlesJS('particles-js',
         },
         "move": {
           "enable": true,
-          "speed": 12,
+          "speed": 6,
           "direction": "top",
           "random": true,
           "straight": false,
@@ -70,7 +70,7 @@ particlesJS('particles-js',
         }
       },
       "interactivity": {
-        "detect_on": "canvas",
+        "detect_on": "window",
         "events": {
           "onhover": {
             "enable": false,

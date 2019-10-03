@@ -2,10 +2,12 @@
 body {
 
 }
-body #particles-js{
-  position: absolute;
+#particlesJS{
   width: 100%;
   height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /*
 body .__bgdots{

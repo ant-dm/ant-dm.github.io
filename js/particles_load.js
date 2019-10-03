@@ -3,7 +3,7 @@ particlesJS('particles-js',
     {
       "particles": {
         "number": {
-          "value": 10,
+          "value": 160,
           "density": {
             "enable": false,
             "value_area": 800
@@ -70,7 +70,7 @@ particlesJS('particles-js',
         }
       },
       "interactivity": {
-        "detect_on": "window",
+        "detect_on": "canvas",
         "events": {
           "onhover": {
             "enable": false,

@@ -488,15 +488,15 @@ var pJS = function(tag_id, params){
 
     if(pJS.particles.shape.stroke.width > 0){
       if (pJS.particles.shape.stroke.color instanceof Array){
-        console.log("array!");
-        console.log("Length:"+pJS.particles.shape.stroke.color.length);
+        //console.log("array!");
+        //console.log("Length:"+pJS.particles.shape.stroke.color.length);
         var ST_color_selected = pJS.particles.shape.stroke.color[Math.floor(Math.random() * pJS.particles.shape.stroke.color.length)];
-        console.log("Random:"+ST_color_selected);
+        //console.log("Random:"+ST_color_selected);
         pJS.canvas.ctx.strokeStyle = ST_color_selected;
         pJS.canvas.ctx.lineWidth = pJS.particles.shape.stroke.width;
         pJS.canvas.ctx.stroke();
       }else {
-        console.log("Not");
+        //console.log("Not");
         pJS.canvas.ctx.strokeStyle = pJS.particles.shape.stroke.color;
         pJS.canvas.ctx.lineWidth = pJS.particles.shape.stroke.width;
         pJS.canvas.ctx.stroke();

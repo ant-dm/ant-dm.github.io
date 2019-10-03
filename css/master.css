@@ -6,7 +6,7 @@
 .logo{
   text-align: center;
   font-size: 56px;
-  color: pink;
+  color: #FFFFFF;
   z-index: 1;
 }
 
@@ -15,7 +15,7 @@
   height: 100%;
   position: absolute;
   background-image: url();
-  background-color: black;
+  background-color: #0E0432;
   background-position: center;
   background-size: cover;
   z-index: -1;

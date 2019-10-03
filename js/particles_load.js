@@ -3,14 +3,14 @@ particlesJS('particles-js',
     {
       "particles": {
         "number": {
-          "value": 160,
+          "value": 20,
           "density": {
             "enable": false,
             "value_area": 800
           }
         },
         "color": {
-          "value": "#000000"
+          "value": "#0E0432"
         },
         "shape": {
           "type": "triangle",
@@ -56,7 +56,7 @@ particlesJS('particles-js',
         },
         "move": {
           "enable": true,
-          "speed": 6,
+          "speed": 2,
           "direction": "top",
           "random": true,
           "straight": false,

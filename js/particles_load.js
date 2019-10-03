@@ -10,7 +10,7 @@ particlesJS('particles-js',
           }
         },
         "color": {
-          "value": "#0E0432"
+          "value": "#000000"
         },
         "shape": {
           "type": "triangle",
@@ -28,7 +28,7 @@ particlesJS('particles-js',
           }
         },
         "opacity": {
-          "value": 1,
+          "value": 0.0,
           "random": false,
           "anim": {
             "enable": false,

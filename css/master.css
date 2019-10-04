@@ -1,4 +1,11 @@
-
+nav {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+nav .navbar-brand{
+  font-size: 1.8em;
+  font-weight: bold;
+}
 
 .logo{
   padding-top: 15%;
@@ -6,12 +13,14 @@
   color: #FFFFFF;
   z-index: 1;
 }
+#navbar-box {
 
-#particles-js{
+}
+#particles-js {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: linear-gradient(to bottom,#0E0432,#471975);
+  background-image: linear-gradient(to bottom,#001419,#0E0432,#2B1047,#471975);
   background-color: #0E0432;
   background-position: center;
   background-size: cover;

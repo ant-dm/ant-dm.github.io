@@ -6,6 +6,30 @@ nav .navbar-brand{
   font-size: 1.8em;
   font-weight: bold;
 }
+a .nav-link {
+    display: inline-block;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color: rgba(255, 182, 38, 0.4);
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+  color: #FFAB05;
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:  linear-gradient(to right, #F4FF00 1%,#FFAB05 100%);
+    transition: width .35s, color .35s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link:hover {
+  color: #FFB432 !important;
+}
+
 
 .logo{
   padding-top: 15%;

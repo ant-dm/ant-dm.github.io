@@ -10,7 +10,7 @@ $(document).ready(function () {
     var _opened = $(".navbar-collapse").hasClass("navbar-collapse collapse show");
     console.log(clickover);
 
-    if (_opened === true && (!clickover.hasClass("navbar-toggler ml-auto NavTogglerStyle") && !clickover.hasClass("navbar-toggler-icon"))) {
+    if (_opened === true && (!clickover.hasClass("navbar-toggler ml-auto NavTogglerStyle") && !clickover.hasClass("navbar-toggler-icon") && !clickover.hasClass("nav-link"))) {
         CollapseNavbar();
     }
   });

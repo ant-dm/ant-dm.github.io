@@ -3,14 +3,38 @@ layout: base
 ---
 <div class="home">
   <div class="text_wapper01 mx-5 text-white">
-    {%- if page.title -%}
-      <p class="page-heading" style="font-size: 3.5em; margin-top: 15%; font-weight: bold;">{{ page.title }}</p>
-    {%- endif -%}
-      <h5 class="">嗯，那個...目前我不知道要打些什麼就是了...</h5>
+      <div class="page-grid">
+        <div class="row justify-content-star">
+          <div class="col-12 col-xl-6">
+            {%- if page.title -%}
+              <p class="page-heading" style="font-size: 3.5em; margin-top: 25%; font-weight: bold;">{{ page.title }}</p>
+            {%- endif -%}
+              <h5 class="">嗯，那個...目前我不知道要打些什麼就是了...</h5>
+          </div>
+          <div class="col-12 col-xl-6">
+            <div class="home-carousel" style="margin-top:25%;">
+              {%- include fragments/home-carousel.html -%}
+            </div>
+          </div>
+        </div>
+      </div>
       <br>
       <br>
-      <button type="button" class="btn btn-primary btn-lg" style="background: #a022ff; border-color: #a022ff; width: 20%;">Primary</button>
-      <button type="button" class="btn btn-primary btn-lg ml-2" style="background: #a022ff; border-color: #a022ff; width: 20%;">Primary</button>
+      <div class="botton-grid">
+        <div class="row justify-content-start">
+          <div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-3 mb-3">
+            <button type="button" class="btn btn-primary btn-block btn-lg" style="background: #a022ff; border-color: #a022ff;">
+              Android
+            </button>
+          </div>
+          <div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-3">
+            <button type="button" class="btn btn-primary btn-block btn-lg" style="background: #a022ff; border-color: #a022ff;">
+              Team
+            </button>
+          </div>
+        </div>
+      </div>
+      <br>
 
   </div>
   {{ content }}

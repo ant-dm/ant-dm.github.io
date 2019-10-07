@@ -1,14 +1,18 @@
 nav {
   font-size: 1.8em;
   font-weight: bold;
+
 }
 nav .navbar-brand{
-  font-size: 1.8em;
-  font-weight: bold;
+  background: linear-gradient(to right,#f86ef7,#6e26f6, #f76af7,#6e26f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2em !important;
 }
 
 .navbar-dark .navbar-nav .nav-link{
   color: rgba(255, 182, 38, 0.4);
+
 }
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
   color: #FFAB05;
@@ -52,7 +56,7 @@ li a {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: linear-gradient(to bottom,#001419,#0E0432,#2B1047,#471975);
+  background-image: linear-gradient(to bottom,#001419 0%,#0E0432  75%,#2B1047 85%,#471975 100%);
   background-color: #0E0432;
   background-position: center;
   background-size: cover;

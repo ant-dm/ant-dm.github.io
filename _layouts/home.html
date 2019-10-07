@@ -2,18 +2,25 @@
 layout: base
 ---
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading mt-5 ml-5 text-white">{{ page.title }}</h1>
-  {%- endif -%}
+  <div class="text_wapper01 mx-5 text-white">
+    {%- if page.title -%}
+      <p class="page-heading" style="font-size: 3.5em; margin-top: 15%; font-weight: bold;">{{ page.title }}</p>
+    {%- endif -%}
+      <h5 class="">嗯，那個...目前我不知道要打些什麼就是了...</h5>
+      <br>
+      <br>
+      <button type="button" class="btn btn-primary btn-lg" style="background: #a022ff; border-color: #a022ff; width: 20%;">Primary</button>
+      <button type="button" class="btn btn-primary btn-lg ml-2" style="background: #a022ff; border-color: #a022ff; width: 20%;">Primary</button>
 
+  </div>
   {{ content }}
 
+
   {%- if site.posts.size > 0 -%}
-    <h2>there is a post!</h2>
+
   {%- else -%}
-    <h2>There is no post!</h2>
+
   {%- endif -%}
 
-  <h2 style="color: white;">Post's number: {{ site.posts.size }}</h2>
 
 </div>

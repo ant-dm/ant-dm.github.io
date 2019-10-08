@@ -14,7 +14,10 @@ nav .navbar-brand{
   -webkit-text-fill-color: transparent;
   font-size: 1.2em !important;
 }
-
+.navbar {
+  top: 0;
+  transition: top 0.3s;
+}
 .navbar-dark .navbar-nav .nav-link{
   color: rgba(255, 182, 38, 0.4);
 

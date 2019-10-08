@@ -1,5 +1,5 @@
-//Collapse Navbar when click outside
 $(document).ready(function () {
+  //Collapse Navbar when click outside
   function CollapseNavbar() {
     $(".navbar-collapse").removeClass('show');
     $(".navbar-toggle").addClass('collapsed');
@@ -18,4 +18,10 @@ $(document).ready(function () {
         CollapseNavbar();
     }
   });
+  //hide navbar when scroll down
+  var def = 0;
+  $(window).on('scroll', function() {
+    $('.navbar-wapper').toggleClass('scrollhide', $(window).scrollTop() > def);
+    def = $(window).scrollTop();
+  })
 });

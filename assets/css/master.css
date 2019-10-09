@@ -1,3 +1,4 @@
+
 html {
   height: 100%;
   min-height: 100%;
@@ -59,20 +60,6 @@ li a {
   background-image: url("../img/icon/yellowT.svg") !important;
   width: 2.5em !important;
   height: 2.5em !important;
-}
-/* page-heading */
-.page-heading {
-  position: relative;
-  height: auto;
-  width: 100%;
-  min-height: 35rem;
-  padding-top: 15rem;
-}
-.page-heading h1 {
-  font-family: 'Ubuntu';
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  color: #FFFFFF;
 }
 
 /* particles-js

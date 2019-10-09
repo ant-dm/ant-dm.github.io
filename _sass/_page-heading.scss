@@ -4,11 +4,22 @@
   height: auto;
   width: 100%;
   min-height: 35rem;
-  padding-top: 15rem;
-}
-.page-heading h1 {
-  font-family: 'Ubuntu';
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  color: #FFFFFF;
+  padding-top: 10rem;
+  background-attachment: scroll;
+  color: $page-heading-def-text-color;
+  h1 {
+    font-family: $root-font-en;
+    font-size: 5.0rem;
+    line-height: 3.0rem;
+  }
+  h2 {
+    font-family:  $root-font-zh;
+  }
+  .btn-primary {
+    background-color: $page-heading-btn-color !important;
+    border-color: $page-heading-btn-bor-color !important;
+  }
+  @media(min-width: 920px){
+
+  }
 }

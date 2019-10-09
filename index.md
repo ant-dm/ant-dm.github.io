@@ -6,5 +6,5 @@ layout: home
 title: ΛNΤ-ΔM Production
 permalink: /index.html
 ---
-<h5 class="">嗯，那個...目前我不知道要打些什麼就是了...</h5>
+嗯，那個...目前我不知道要打些什麼就是了...  
 This is the test message.

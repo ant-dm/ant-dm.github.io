@@ -4,22 +4,49 @@
   height: auto;
   width: 100%;
   min-height: 35rem;
-  padding-top: 10rem;
+  padding-top: 6rem;
   background-attachment: scroll;
   color: $page-heading-def-text-color;
   h1 {
     font-family: $root-font-en;
-    font-size: 5.0rem;
-    line-height: 3.0rem;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
   }
-  h2 {
+  h5 {
     font-family:  $root-font-zh;
+    font-size: 1.0rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .btn {
+    text-transform: uppercase;
+    padding: 1.2rem 2.0rem;
   }
   .btn-primary {
     background-color: $page-heading-btn-color !important;
     border-color: $page-heading-btn-bor-color !important;
   }
-  @media(min-width: 920px){
-
+  @media(min-width: 576px){
+    padding-top: 25%;
+    h1 {
+      font-size: 3.0rem;
+    }
+  }
+  @media(min-width: 768px){
+    padding-top: 25%;
+    h1 {
+      font-size: 4.5rem;
+    }
+  }
+  @media(min-width: 992px){
+    padding-top: 17%;
+    h1 {
+      font-size: 5.0rem;
+    }
+  }
+  @media(min-width: 1200px){
+    padding-top: 15%;
+    h1 {
+      font-size: 5.0rem;
+    }
   }
 }

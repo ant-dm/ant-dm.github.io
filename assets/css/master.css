@@ -60,12 +60,27 @@ li a {
   width: 2.5em !important;
   height: 2.5em !important;
 }
-.container {
-  z-index: 2 !important;
+/* page-heading */
+.page-heading {
+  position: relative;
+  height: auto;
+  width: 100%;
+  min-height: 35rem;
+  padding-top: 15rem;
 }
-.particles-js-canvas-el {
-  z-index: -1 !important;
+.page-heading h1 {
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: #FFFFFF;
 }
+
+/* particles-js
+
+  .particles-js-canvas-el {
+    z-index: -1 !important;
+  }
+*/
 #particles-js {
   width: 100%;
   height: 100vh;
@@ -75,5 +90,4 @@ li a {
   background-size: cover;
   position: fixed;
   z-index:-1 !important;
-
 }

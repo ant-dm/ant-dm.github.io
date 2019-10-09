@@ -1,26 +1,38 @@
 ---
 layout: base
 ---
+<header class="page-heading w-100">
+  <div class="container d-flex h-100 align-items-center">
+    <div class="mx-auto text-center">
+      <!-- title here -->
+      {%- if page.title -%}
+      <h1 class="mx-auto my-0">{{ page.title }}</h1>
+      {%- endif -%}
+      <!-- content here -->
+      <h2>{{ content }}</h2>
+    </div>
+
+
+
+  </div>
+</header>
+-------------
 <div class="home">
   <div class="text_wapper01 mx-5 text-white">
       <div class="page-grid">
         <div class="row justify-content-star" style="margin-top: 20%;">
-          <div class="col-12 col-md-12 col-lg-7 col-xl-7">
-            {%- if page.title -%}
-              <p class="page-heading" style="font-size: 3.5em; font-weight: bold;">{{ page.title }}</p>
-            {%- endif -%}
-              {{ content }}
-              
+          <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+
+            <!-- botton grid -->
               <div class="botton-grid my-5">
                 <div class="row justify-content-start">
-                  <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-5">
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
                     <button type="button" class="btn btn-primary btn-block btn-lg" style="background: #a022ff; border-color: #a022ff;">
                       Android
                     </button>
                     <div class="hidden-lg hidden-md hidden-sm">&nbsp;</div>
                   </div>
-
-                  <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-5">
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
                     <button type="button" class="btn btn-primary btn-block btn-lg" style="background: #a022ff; border-color: #a022ff;">
                       Team
                     </button>
@@ -28,18 +40,22 @@ layout: base
                 </div>
               </div>
           </div>
-          <div class="col-12 col-md-12 col-lg-5 col-xl-5">
-            <div class="home-carousel" style="">
-              {%- include fragments/home-carousel.html -%}
-            </div>
+          <div class="col-12 col-md-12 col-lg-12 col-xl-12">
+
           </div>
         </div>
       </div>
       <br>
       <br>
-
       <br>
+      <!-- carousel here -->
+      <div class="home-carousel" style="margin-top: 20%;">
+        {%- include fragments/home-carousel.html -%}
+      </div>
 
+      <div class="team">
+
+      </div>
   </div>
 
 

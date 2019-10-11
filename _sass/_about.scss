@@ -5,5 +5,13 @@
   h2 {
     font-size: 5rem;
   }
-
+  .team-member {
+    img {
+      width: 255px;
+      height: 255px;
+      object-fit:cover;
+      border-radius:50%;
+      border: 7px solid fade-out($team-img-border, 0.2);
+    }
+  }
 }

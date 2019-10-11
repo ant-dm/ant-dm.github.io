@@ -16,7 +16,7 @@
   }
   .nav-link {
     color: $nav-link-base-color;
-    text-shadow: 1px 1px $nav-link-shadow-color , -1px -1px $nav-linl-shadow-color2;
+    text-shadow: 0.8px 0.8px $nav-link-shadow-color , -0.8px -0.8px $nav-linl-shadow-color2;
     &:hover {
       color: $white;
     }
@@ -55,7 +55,6 @@
     width: 3.5rem !important;
     height: 1.3rem !important;
     &::before {
-
       position: absolute;
       top: 0; right: 0; bottom: 0; left: 0;
       z-index: -1;
@@ -65,14 +64,15 @@
     }
   }
   .NavTogglerStyle {
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      z-index: -1;
-      margin: -1px;
-      border-radius: inherit;
-      background: linear-gradient(to right, $neon-blue, $neon-pink);
-    }
+
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -1px;
+    border-radius: inherit;
+    background: linear-gradient(to right, $neon-blue, $neon-pink);
   }
 }

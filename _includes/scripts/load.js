@@ -19,13 +19,18 @@ $(document).ready(function () {
   //hide navbar when scroll down
   var def = 0;
   $(window).on('scroll', function() {
-    $('.navbar').toggleClass('scrollhide', $(window).scrollTop() > def);
-    if (_opened == true) {
-      $(".navbar").removeClass('scrollhide');
-      $(".navbar").fadeIn();
+    if ($(window).scrollTop() > def) {
+      $('.navbar').hide();
     } else {
+      $('.navbar').show();
       def = $(window).scrollTop();
     }
-    $(".navbar").fadeOut();
+
+//  $('.navbar').toggleClass('fadeIn_up', $(window).scrollTop() > def);
+//    if (_opened == true) {
+//      $(".navbar").removeClass('fadeIn_up');
+//    } else {
+//      def = $(window).scrollTop();
+//    }
   })
 });

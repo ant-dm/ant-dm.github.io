@@ -5,6 +5,7 @@ $root-font-zh: 'Noto Sans TC' !default;
 $white: #FFFFFF !default;
 $indigo: #6610f2 !default;
 $neon-pink: #FF00FF !default;
+$neon-blue: #00ffff !default;
 $purple-001: #6f42c1 !default;
 $purple-002: #6e26f6 !default;
 
@@ -18,11 +19,14 @@ $page-heading-btn-bor-color: $indigo;
  *    $nav-link-bline
  *    use linear-gradient
  */
-$nav-brand-color: #f86ef7,#6e26f6, #f76af7,#6e26f6 !default;
-$nav-bg-rgba: rgba(38, 0, 47, 0.4);
+$nav-brand-color: linear-gradient(to right, $neon-blue, $neon-pink);
+$nav-bg-rgba: rgba(0, 20, 25, 1.0);
 $nav-menu-color: $white;
-$nav-menu-shadow-color: $neon-pink;
-$nav-menu-icon: "../img/icon/yellowT.svg";
-$nav-link-base-color: #EFAF26;
+$nav-menu-shadow-color: "";
+$nav-menu-shadow-color2: "";
+$nav-menu-icon: "";
+$nav-link-base-color: $white;
+$nav-link-shadow-color: $neon-pink;
+$nav-linl-shadow-color2: $neon-blue;
 $nav-link-hover-color: #EFAF26;
 $nav-link-bline: #F4FF00 1%, #FFAB05 100%;

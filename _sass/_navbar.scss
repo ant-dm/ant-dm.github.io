@@ -1,10 +1,11 @@
 #ANT-navbar {
   // nav brand
   font-size: 1.2rem;
+
   background: $nav-bg-rgba;
   .navbar-brand {
     font-size: 1.5rem;
-    background: linear-gradient(to right, $nav-brand-color);
+    background: $nav-brand-color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -15,6 +16,7 @@
   }
   .nav-link {
     color: $nav-link-base-color;
+    text-shadow: 1px 1px $nav-link-shadow-color , -1px -1px $nav-linl-shadow-color2;
     &:hover {
       color: $white;
     }
@@ -33,18 +35,44 @@
     }
   }
   // menu
+  p {
+  }
   .menu {
-    color: $nav-menu-color;
-    margin-top: 25%;
-    font-weight: bold;
-    text-shadow: 2px 2px $nav-menu-shadow-color;
+    background: $nav-menu-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //text-shadow: 2px 2px $nav-menu-shadow-color, -1px -1px $nav-menu-shadow-color2;
+  }
+  .navbar-toggler {
+    background-color: transparent;
+    border: 2px solid;
+    border-image-source: linear-gradient(to right, $neon-blue, $neon-pink);
+    border-image-slice: 1;
+    border-radius: .25rem;
   }
   .navbar-toggler-icon {
-    background-image: url($nav-menu-icon) !important;
-    width: 2.5em !important;
-    height: 2.5em !important;
+    //background-image: url($nav-menu-icon) !important;
+    width: 3.5rem !important;
+    height: 1.3rem !important;
+    &::before {
+
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      margin: -1px;
+      border-radius: inherit;
+      background: linear-gradient(to right, $neon-blue, $neon-pink);
+    }
   }
   .NavTogglerStyle {
-    border: none !important;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      margin: -1px;
+      border-radius: inherit;
+      background: linear-gradient(to right, $neon-blue, $neon-pink);
+    }
   }
 }

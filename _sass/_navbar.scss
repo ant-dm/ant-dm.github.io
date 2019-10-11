@@ -1,15 +1,42 @@
 #ANT-navbar {
   font-size: 1.5rem;
+  // nav brand
   .navbar-brand {
     background: linear-gradient(to right, $nav-brand-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  // nav-link
+  li a { // bottom line
+      display: inline-block !important;
+      height: 1.1rem;
+  }
+  .nav-link {
+    color: $nav-link-base-color;
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .nav-link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background:  linear-gradient(to right, $nav-link-bline);
+    margin: 0% 50%;
+    transition: all .35s ease;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+    margin: 0% 0%;
+  }
+  // menu
   .menu {
-    color: #FFFFFF;
+    color: $nav-menu-color;
     margin-top: 25%;
     font-weight: bold;
-    text-shadow: 2px 2px $nav-menu-color;
+    text-shadow: 2px 2px $nav-menu-shadow-color;
   }
   .navbar-toggler-icon {
     background-image: url($nav-menu-icon) !important;
@@ -18,25 +45,6 @@
   }
   .NavTogglerStyle {
     border: none !important;
-  }
-  li a {
-      display: inline-block !important;
-  }
-  .nav-link::after {
-    content: '';
-    display: block;
-    width: 0%;
-    height: 2px;
-    background:  linear-gradient(to right, #F4FF00 1%,#FFAB05 100%);
-    margin: 0% 50%;
-    transition: all .35s ease;
-  }
-  .nav-link:hover::after {
-    width: 100%;
-    margin: 0% 0%;
-  }
-  .nav-link:hover {
-    color: #FFB432 !important;
   }
   .navbar-wapper {
     transition: 0.3s ease;

@@ -2,19 +2,26 @@
 $root-font-en: 'Ubuntu' !default;
 $root-font-zh: 'Noto Sans TC' !default;
 /* root - color */
+$white: #FFFFFF !default;
 $indigo: #6610f2 !default;
 $neon-pink: #FF00FF !default;
 $purple-001: #6f42c1 !default;
 $purple-002: #6e26f6 !default;
 
 /* page-heading */
-$page-heading-def-text-color: #FFFFFF !default;
+$page-heading-def-text-color: $white;
 $page-heading-btn-color : $indigo;
 $page-heading-btn-bor-color: $indigo;
 
-/* navbar */
-
+/* navbar
+ *    $nav-brand-color
+ *    $nav-link-bline
+ *    use linear-gradient
+ */
 $nav-brand-color: #f86ef7,#6e26f6, #f76af7,#6e26f6 !default;
-//  $nav-brand-color use linear-gradient
-$nav-menu-color: $neon-pink;
+$nav-menu-color: $white;
+$nav-menu-shadow-color: $neon-pink;
 $nav-menu-icon: "../img/icon/yellowT.svg";
+$nav-link-base-color: #EFAF26;
+$nav-link-hover-color: #EFAF26;
+$nav-link-bline: #F4FF00 1%, #FFAB05 100%;

@@ -4,7 +4,7 @@
   height: auto;
   width: 100%;
   min-height: 35rem;
-  padding-top: 6rem;
+  padding-top: 11rem;
   background-attachment: scroll;
   color: $page-heading-def-text-color;
   h1 {
@@ -26,19 +26,19 @@
     border-color: $page-heading-btn-bor-color !important;
   }
   @media(min-width: 576px){
-    padding-top: 25%;
+    padding-top: 15rem;
     h1 {
       font-size: 3.0rem;
     }
   }
   @media(min-width: 768px){
-    padding-top: 25%;
+    padding-top: 16rem;
     h1 {
       font-size: 4.5rem;
     }
   }
   @media(min-width: 992px){
-    padding-top: 17%;
+    padding-top: 16rem;
     h1 {
       font-size: 5.0rem;
     }

@@ -1,7 +1,8 @@
 #ANT-navbar {
-  font-size: 1.5rem;
   // nav brand
+  font-size: 1.2rem;
   .navbar-brand {
+    font-size: 1.5rem;
     background: linear-gradient(to right, $nav-brand-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -16,20 +17,19 @@
     &:hover {
       color: $white;
     }
-  }
-
-  .nav-link::after {
-    content: '';
-    display: block;
-    width: 0%;
-    height: 2px;
-    background:  linear-gradient(to right, $nav-link-bline);
-    margin: 0% 50%;
-    transition: all .35s ease;
-  }
-  .nav-link:hover::after {
-    width: 100%;
-    margin: 0% 0%;
+    &::after {
+      content: '';
+      display: block;
+      width: 0%;
+      height: 2px;
+      background:  linear-gradient(to right, $nav-link-bline);
+      margin: 0% 50%;
+      transition: all .35s ease;
+    }
+    &:hover::after {
+      width: 100%;
+      margin: 0% 0%;
+    }
   }
   // menu
   .menu {
@@ -46,7 +46,7 @@
   .NavTogglerStyle {
     border: none !important;
   }
-  .navbar-wapper {
+  .navbar {
     transition: 0.3s ease;
   }
   .scrollhide {

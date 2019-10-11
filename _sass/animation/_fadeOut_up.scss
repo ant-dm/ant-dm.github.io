@@ -1,0 +1,5 @@
+.fadeOut_up {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+}

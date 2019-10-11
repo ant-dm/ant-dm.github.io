@@ -17,14 +17,8 @@ $(document).ready(function () {
     }
   });
   //hide navbar when scroll down
-  var def = 0;
-  $(window).on('scroll', function() {
-    if ($(window).scrollTop() > def) {
-      $('.navbar').hide();
-    } else {
-      $('.navbar').show();
-      def = $(window).scrollTop();
-    }
+  
+    //console.log(def);
 
 //  $('.navbar').toggleClass('fadeIn_up', $(window).scrollTop() > def);
 //    if (_opened == true) {

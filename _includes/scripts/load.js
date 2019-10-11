@@ -19,12 +19,13 @@ $(document).ready(function () {
   //hide navbar when scroll down
   var def = 0;
   $(window).on('scroll', function() {
-    $('.navbar-wapper').toggleClass('scrollhide', $(window).scrollTop() > def);
+    $('.navbar').toggleClass('scrollhide', $(window).scrollTop() > def);
     if (_opened == true) {
-      $(".navbar-wapper").removeClass('scrollhide');
+      $(".navbar").removeClass('scrollhide');
+      $(".navbar").fadeIn();
     } else {
       def = $(window).scrollTop();
     }
-
+    $(".navbar").fadeOut();
   })
 });

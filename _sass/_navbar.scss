@@ -1,6 +1,7 @@
 #ANT-navbar {
   // nav brand
   font-size: 1.2rem;
+
   .navbar-brand {
     font-size: 1.5rem;
     background: linear-gradient(to right, $nav-brand-color);
@@ -45,11 +46,5 @@
   }
   .NavTogglerStyle {
     border: none !important;
-  }
-  .navbar {
-    transition: 0.3s ease;
-  }
-  .scrollhide {
-    transform: translateY(-100%);
   }
 }

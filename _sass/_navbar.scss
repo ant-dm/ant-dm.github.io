@@ -1,7 +1,7 @@
 #ANT-navbar {
   // nav brand
   font-size: 1.2rem;
-  background: rgba(227, 226, 224, 0.3);
+  background: $nav-bg-rgba;
   .navbar-brand {
     font-size: 1.5rem;
     background: linear-gradient(to right, $nav-brand-color);

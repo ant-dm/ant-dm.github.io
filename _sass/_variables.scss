@@ -9,11 +9,6 @@ $neon-blue: #00ffff !default;
 $purple-001: #6f42c1 !default;
 $purple-002: #6e26f6 !default;
 
-/* page-heading */
-$page-heading-def-text-color: $white;
-$page-heading-btn-color : $indigo;
-$page-heading-btn-bor-color: $indigo;
-
 /* navbar
  *    $nav-brand-color
  *    $nav-link-bline
@@ -30,3 +25,19 @@ $nav-link-shadow-color: $neon-pink;
 $nav-linl-shadow-color2: $neon-blue;
 $nav-link-hover-color: #EFAF26;
 $nav-link-bline: $neon-blue 1%, $neon-pink 100%;
+
+/* page-heading */
+$page-heading-def-text-color: $white;
+$page-heading-btn-color : $indigo;
+$page-heading-btn-bor-color: $indigo;
+
+/* about */
+$about-bg-color: linear-gradient(to bottom, rgba( 0, 0, 0, 0.0) 25%, rgba(14, 4, 50, 1.0) 100%);
+
+
+
+
+
+/* particles-js */
+$particles-bg-color: linear-gradient(to bottom,#001419 15%,#0E0432  100%);
+//#2B1047 85%,#471975 100%

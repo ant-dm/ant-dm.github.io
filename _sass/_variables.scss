@@ -3,9 +3,16 @@ $root-font-en: 'Ubuntu' !default;
 $root-font-zh: 'Noto Sans TC' !default;
 /* root - color */
 $indigo: #6610f2 !default;
-$purple: #6f42c1 !default;
+$neon-pink: #FF00FF !default;
+$purple-001: #6f42c1 !default;
+$purple-002: #6e26f6 !default;
 
 /* page-heading */
 $page-heading-def-text-color: #FFFFFF !default;
-$page-heading-btn-color: $indigo;
+$page-heading-btn-color : $indigo;
 $page-heading-btn-bor-color: $indigo;
+
+/* navbar */
+$nav-brand-color: #f86ef7,#6e26f6, #f76af7,#6e26f6 !default;
+$nav-menu-color: $neon-pink;
+$nav-menu-icon: "../img/icon/yellowT.svg";

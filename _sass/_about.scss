@@ -5,13 +5,24 @@
   h2 {
     font-size: 5rem;
   }
+
   .team-member {
     img {
-      width: 255px;
-      height: 255px;
+      width: $team-img-border-hw;
+      height: $team-img-border-hw;
       object-fit:cover;
-      border-radius:50%;
-      border: 7px solid $team-img-border;
+      border: $team-img-border;
+      border-radius: $team-img-border-radius;
+      background-image: $team-img-border-color2;
+      background-origin: border-box;
+      background-clip: border-box, content-box;
+    }
+    h4 {
+      padding-top: 1rem;
+      color: $white;
+    }
+    p {
+      color: azure;
     }
   }
 }

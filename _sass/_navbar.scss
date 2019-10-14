@@ -33,7 +33,19 @@
       width: 100%;
       margin: 0% 0%;
     }
+    
   }
+  .active{
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background:  linear-gradient(to right, $nav-link-bline);
+      margin: 0% 0%;
+    }
+  }
+
   // menu
   p {
   }

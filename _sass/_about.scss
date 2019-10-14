@@ -21,13 +21,17 @@
       padding-top: 1rem;
       color: $indigo;
       font-size: 1.8rem;
+      font-weight: bold;
     }
     p {
       color: $gray;
+      margin-top: -1rem;
+      font-size: 1.2rem;
     }
     blockquote {
       margin-top: -0.8rem;
       color: $purple-001;
+      font-size: 1.0rem;
     }
   }
 }

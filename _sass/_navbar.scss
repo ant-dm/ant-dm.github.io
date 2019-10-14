@@ -10,7 +10,7 @@
     -webkit-text-fill-color: transparent;
   }
   // nav-link
-  li a { // bottom line
+  li a {  // bottom line
       display: inline-block !important;
       height: 1.1rem;
   }
@@ -32,17 +32,12 @@
     &:hover::after {
       width: 100%;
       margin: 0% 0%;
-    }
-    
+    }    
   }
-  .active{
-    &::after {
-      content: '';
-      display: inline-block;
-      width: 100%;
-      height: 2px;
-      background:  linear-gradient(to right, $nav-link-bline);
-      margin: 0% 0%;
+  .nav-item {
+    &:active, 
+    &:focus {
+      border-bottom: $neon-blue;
     }
   }
 

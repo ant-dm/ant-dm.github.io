@@ -4,7 +4,7 @@
   height: auto;
   width: 100%;
   min-height: 35rem;
-  padding-top: 11rem;
+  padding-top: 8rem;
   background-attachment: scroll;
   color: $page-heading-def-text-color;
   h1 {
@@ -17,6 +17,10 @@
     font-size: 1.0rem;
     color: rgba(255, 255, 255, 0.7);
   }
+  img {
+    width: 90%;
+    height: 90%;
+  }
   .btn {
     text-transform: uppercase;
     padding: 1.2rem 2.0rem;
@@ -26,25 +30,34 @@
     border-color: $page-heading-btn-bor-color !important;
   }
   @media(min-width: 576px){
-    padding-top: 13rem;
+    padding-top: 5rem;
     h1 {
       font-size: 3.0rem;
     }
+    img {
+      width: 80%;
+      height: 80%;
+    }
   }
   @media(min-width: 768px){
-    padding-top: 15rem;
+    padding-top: 5rem;
     h1 {
       font-size: 4.5rem;
     }
+    img {
+      width: 70%;
+      height: 70%;
+    }
   }
   @media(min-width: 992px){
-    padding-top: 15rem;
+    padding-top: 4rem;
     h1 {
       font-size: 5.0rem;
     }
   }
   @media(min-width: 1200px){
-    padding-top: 15%;
+    padding-top: 3rem;
+    padding-left: -1rem;
     h1 {
       font-size: 5.0rem;
     }

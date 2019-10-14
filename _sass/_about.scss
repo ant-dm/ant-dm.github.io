@@ -19,10 +19,13 @@
     }
     h4 {
       padding-top: 1rem;
-      color: $white;
+      color: $indigo;
     }
     p {
-      color: azure;
+      color: $gray;
+    }
+    blockquote {
+      color: $purple-001;
     }
   }
 }

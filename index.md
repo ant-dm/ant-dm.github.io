@@ -7,4 +7,5 @@ title: ΛNΤ-ΔM Production
 permalink: /index.html
 ---
 100%濃醇香.
+
 This is the test message.

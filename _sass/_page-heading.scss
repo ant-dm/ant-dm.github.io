@@ -19,18 +19,11 @@
     margin-top: -1.2rem;
     margin-bottom: 1rem;
   }
-  img {
-    width: 90%;
-    height: 90%;
-    margin-left: -0.5rem;
-    position: relative;
-    &::before {
-        contain: '';
-        width: $page-logo-hw;
-        height: $page-logo-hw;
-        position: relative;
-        background: url($page-logo-path);
-      }
+  .logo {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url("../img/icon/logo.png");
   }
   .btn {
     text-transform: uppercase;

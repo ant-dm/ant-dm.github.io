@@ -2,8 +2,7 @@
 .page-heading {
   position: relative;
   height: auto;
-  width: 100%;
-  min-height: 35rem;
+  min-height: 40rem;
   padding-top: 8rem;
   background-attachment: scroll;
   color: $page-heading-def-text-color;
@@ -19,14 +18,9 @@
     margin-top: -1.2rem;
     margin-bottom: 1rem;
   }
-  .logo {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    img {
-      width: 15rem;
-      height: 15rem;
-    }
+  img {
+    width: 80%;
+    height: 80%;
   }
   .btn {
     text-transform: uppercase;

@@ -21,12 +21,21 @@
   img {
     width: 20rem;
     height: 20rem;
-    fill: url(#gradient-vertical) gray;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-image: url('../img/bg/bg-glitch-header.png');
+      height:100%;
+      width:100%;
+    }      
     /*
     filter: drop-shadow(2px 2px 0px $neon-pink)
             drop-shadow(-2px -2px 0px $neon-blue); 
     */  
   }
+  
   .btn {
     text-transform: uppercase;
     padding: 1.2rem 2.0rem;

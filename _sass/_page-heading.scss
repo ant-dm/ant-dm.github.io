@@ -21,11 +21,11 @@
   img {
     width: 20rem;
     height: 20rem;
-    filter: drop-shadow(2px 2px 0px $neon-pink);
-    &::before {
-      content: '';
-      filter: drop-shadow(-2px -2px 0px $neon-blue);
-    }
+    fill: url(#gradient-vertical) gray;
+    /*
+    filter: drop-shadow(2px 2px 0px $neon-pink)
+            drop-shadow(-2px -2px 0px $neon-blue); 
+    */  
   }
   .btn {
     text-transform: uppercase;

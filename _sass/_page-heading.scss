@@ -3,7 +3,7 @@
   position: relative;
   height: auto;
   min-height: 40rem;
-  padding-top: 8rem;
+  padding-top: 5rem;
   background-attachment: scroll;
   color: $page-heading-def-text-color;
   h1 {
@@ -15,18 +15,16 @@
     font-family:  $root-font-zh;
     font-size: 1.0rem;
     color: rgba(255, 255, 255, 0.7);
-    margin-top: -1.2rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
   }
   img {
-    width: 80%;
-    height: 80%;
-    &::after {
-      width: 80%;
-      height: 180%;
+    width: 20rem;
+    height: 20rem;
+    filter: drop-shadow(2px 2px 0px $neon-pink);
+    &::before {
       content: '';
-      background: url("../img/icon/logo.webp");
-      background-position: 5px 5px;
+      filter: drop-shadow(-2px -2px 0px $neon-blue);
     }
   }
   .btn {
@@ -37,37 +35,67 @@
     background-color: $page-heading-btn-color !important;
     border-color: $page-heading-btn-bor-color !important;
   }
+  @media(min-width: 320px) {
+    img {
+      width: 18rem;
+      height: 18rem;
+    }
+    h5 {
+      margin-top: -2.5rem;
+    }
+  }
   @media(min-width: 576px){
-    padding-top: 5rem;
+    margin-top: -8rem;
     h1 {
       font-size: 3.0rem;
     }
+    h5 {
+      margin-top: -5rem;
+    }
     img {
-      width: 80%;
-      height: 80%;
+      width: 32rem;
+      height: 32rem;
     }
   }
   @media(min-width: 768px){
-    padding-top: 5rem;
+    margin-top: -8rem;
     h1 {
       font-size: 4.5rem;
     }
+    h5 {
+      margin-top: -8rem;
+    }
     img {
-      width: 70%;
-      height: 70%;
+      width: 40rem;
+      height: 40rem;
     }
   }
   @media(min-width: 992px){
-    padding-top: 4rem;
+    margin-top: -8rem;
     h1 {
       font-size: 5.0rem;
     }
+    h5 {
+      margin-top: -8rem;
+    }
+    img {
+      width: 45rem;
+      height: 45rem;
+    }
   }
   @media(min-width: 1200px){
-    padding-top: 3rem;
-    padding-left: -1rem;
+    //padding-top: 0rem;
+    margin-top: -8rem;
+    padding-left: -10rem;
     h1 {
       font-size: 5.0rem;
+    }
+    h5 {
+      margin-top: -8rem;
+    }
+    img {
+      width: 45rem;
+      height: 45rem;
     }
   }
 }

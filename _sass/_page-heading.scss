@@ -22,8 +22,11 @@
   .logo {
     height: 100%;
     width: 100%;
-    position: absolute;
-    background: url("../img/icon/logo.png");
+    position: relative;
+    img {
+      width: 15rem;
+      height: 15rem;
+    }
   }
   .btn {
     text-transform: uppercase;

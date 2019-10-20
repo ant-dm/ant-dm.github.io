@@ -21,6 +21,13 @@
   img {
     width: 80%;
     height: 80%;
+    &::after {
+      width: 80%;
+      height: 180%;
+      content: '';
+      background: url("../img/icon/logo.webp");
+      background-position: 5px 5px;
+    }
   }
   .btn {
     text-transform: uppercase;

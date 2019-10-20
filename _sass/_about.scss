@@ -2,14 +2,16 @@
   background: $about-bg-color;
   margin-top: 20%;
   padding-top: 5rem;
-    
+  
   h2 {
     font-size: 5rem;
   }
 
   .team-member {
-    padding-left: -1rem;
-      padding-right: 1rem;
+    .text-wapper {
+      //margin-left: 1rem;
+      //margin-right: 1rem;
+    }
     img {
       width: $team-img-border-hw;
       height: $team-img-border-hw;

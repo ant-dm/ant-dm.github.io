@@ -24,11 +24,12 @@
     //@debug background-image: url('../.logo/bg/bg-glitch-header.png');
     background-image: $nav-brand-color;
     background-repeat: no-repeat;
-    
     -webkit-mask-image: url($page-logo-path);
     mask-image: url($page-logo-path);
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
     //-webkit-background-clip: text;
     /*
     filter: drop-shadow(2px 2px 0px $neon-pink)

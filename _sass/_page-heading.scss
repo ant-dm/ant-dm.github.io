@@ -45,7 +45,7 @@
     border-color: $page-heading-btn-bor-color !important;
   }
   @media(min-width: 320px) {
-    img {
+    .logo {
       width: 18rem;
       height: 18rem;
     }
@@ -61,7 +61,7 @@
     h5 {
       margin-top: -5rem;
     }
-    img {
+    .logo {
       width: 32rem;
       height: 32rem;
     }
@@ -74,7 +74,7 @@
     h5 {
       margin-top: -8rem;
     }
-    img {
+    .logo {
       width: 40rem;
       height: 40rem;
     }
@@ -87,7 +87,7 @@
     h5 {
       margin-top: -8rem;
     }
-    img {
+    .logo {
       width: 45rem;
       height: 45rem;
     }
@@ -102,7 +102,7 @@
     h5 {
       margin-top: -8rem;
     }
-    img {
+    .logo {
       width: 45rem;
       height: 45rem;
     }

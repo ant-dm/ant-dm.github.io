@@ -7,7 +7,9 @@
   h2 {
     font-size: 5rem;
   }
-
+  .col-sm-5, .col-md-4, .col-lg-3, .col-xl-2 {
+    padding: 0px !important;
+  }
   .team-member {
     h4 {
       padding-top: 1rem;
@@ -35,6 +37,7 @@
       background-image: $team-img-border-color2;
       background-origin: border-box;
       background-clip: border-box, content-box;
+      position: relative;
     }
     .list-group-item {
       padding: 0.3rem 0.3rem !important;
@@ -43,6 +46,44 @@
     }
     .fab {
       font-size: 2em; 
+    }
+  }
+  @media(min-width: 320px) {
+  }
+  @media(min-width: 576px) {
+  }
+  @media(min-width: 768px) {
+  }
+  @media(min-width: 992px) {
+    .team-member {
+      .avatar {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+  }
+  @media(min-width: 1200px) {
+    .team-member {
+      .avatar {
+        width: 13rem;
+        height: 13rem;
+      }
+    }
+  }
+  @media(min-width: 1400px) {
+    .team-member {
+      .avatar {
+        width: 14rem;
+        height: 14rem;
+      }
+    }
+  }
+  @media(min-width: 1450px) {
+    .team-member {
+      .avatar {
+        width: 16rem;
+        height: 16rem;
+      }
     }
   }
 }

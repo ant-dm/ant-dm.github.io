@@ -18,18 +18,18 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
-  img {
+  .logo {
     width: 20rem;
     height: 20rem;
-    &::after {
-      content: '';
-      position: absolute;
-      display: block;
-      top: 0; right: 0; bottom: 0; left: 0;
-      background-image: url('../img/bg/bg-glitch-header.png');
-      height:100%;
-      width:100%;
-    }      
+    //@debug background-image: url('../.logo/bg/bg-glitch-header.png');
+    background-image: $nav-brand-color;
+    background-repeat: no-repeat;
+    
+    -webkit-mask-image: url($page-logo-path);
+    mask-image: url($page-logo-path);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    //-webkit-background-clip: text;
     /*
     filter: drop-shadow(2px 2px 0px $neon-pink)
             drop-shadow(-2px -2px 0px $neon-blue); 

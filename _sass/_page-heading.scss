@@ -38,7 +38,14 @@
     */  
   }
   
-  .btn {
+  .btn-about {
+    .fas {
+      margin-top: 20%;
+      color: $page-heading-btn-color;
+      border: 1rem;
+      border-color: $white;
+      font-size: 5rem;
+    }
     text-transform: uppercase;
     padding: 1.2rem 2.0rem;
   }

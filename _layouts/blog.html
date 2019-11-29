@@ -1,15 +1,46 @@
 ---
 layout: page
 ---
-
-<ul>
-    {%- for post in site.posts -%}
-        <li>
-            <h2>
-                <a herf="{{ post.url }}">{{ post.title }}</a>
-            </h2>
-        </li>
-    {%- endfor -%}
-</ul>
-
-
+<div class="container">
+    <div class="card-columns">
+        {%- for post in site.posts -%}
+        <div class="card">
+            <!-- card image-->
+            {%- if post.thumbnail -%}
+                <img class="card-img-top" src="{{ post.thumbnail }}">
+            {%- else -%}
+                <img class="card-img-top" src="http://www.gimmesomeoven.com/wp-content/uploads/2014/10/The-Best-Chicken-Enchiladas-Recipe-1-1.jpg">
+            {%- endif -%}
+            <div class="card-body">
+                <!-- card title-->
+                {%- if post.title -%}
+                    <h4 class="card-title text-dark">{{ post.title }} </h4>
+                {%- endif -%}
+                {%- if post.author -%}
+                    <small class="text-muted small-css">
+                        <i class="fas fa-users text-dark"></i> {{ post.author }}
+                    </small>
+                {%- else -%}
+                    <small class="text-muted small-css">
+                        <i class="fas fa-users text-dark"></i> ant-dm
+                    </small>
+                {%- endif -%}
+                <!-- card abstract-->
+                {%- if post.abstract -%}
+                    <p class="card-text post-abstract"> {{ post.abstract }} </p>
+                {%- else -%}
+                    <p class="card-text post-abstract"> </p>
+                {%- endif -%}
+                 <!-- card button -->
+                 <a href=" {{ post.url }} " class=" btn btn-dark float-right">Read More</a>
+                
+            </div><!-- end card body-->
+            <div class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
+                    <div class="date">
+                        {{ post.date | date: '%B %d, %Y' }}
+                    </div>
+            </div>
+        </div>
+        {%- endfor -%}
+    </div>
+</div>

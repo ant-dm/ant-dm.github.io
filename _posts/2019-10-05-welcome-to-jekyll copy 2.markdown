@@ -4,8 +4,8 @@ title:  "Welcome to Jekyll!"
 date:   2019-10-05 18:49:24 +0800
 categories: jekyll update
 author : ann
-thumbnail: 
-abstract: fdafkjgjfshkajskfdasfdasfdafdsfafdsafasf
+thumbnail: https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy-downsized.gif
+
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

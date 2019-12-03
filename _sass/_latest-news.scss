@@ -15,7 +15,7 @@
         padding-bottom: 0.2rem !important;
         
         .item-container {
-            height: 25rem;
+            height: 15rem;
             width: 100%;
             overflow: hidden;
             
@@ -41,6 +41,20 @@
             }
         }
         
+    }
+    @media(min-width: 768px){
+        .carousel {
+            
+            .item-container {
+                height: 25rem;
+                width: 100%;
+                overflow: hidden;
+                
+                .post-thumbnail {
+                    max-width: 100%;
+                }
+            }
+        }
     }
 
 }

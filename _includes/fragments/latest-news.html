@@ -18,6 +18,28 @@
                                     <img class="post-thumbnail" src="http://www.gimmesomeoven.com/wp-content/uploads/2014/10/The-Best-Chicken-Enchiladas-Recipe-1-1.jpg">
                                 {%- endif -%}
                             </div>
+                            <div class="overlay">
+                                {%- if post.title -%}
+                                    <h1 class="text-white mb-0">{{ post.title }}</h1>
+                                {%- endif -%}
+                                {%- if post.author -%}
+                                    <small class="text-muted pl-2">
+                                        <i class="fas fa-users text-dark"></i> {{ post.author }}
+                                    </small>
+                                {%- else -%}
+                                    <small class="text-muted pl-2">
+                                        <i class="fas fa-users text-dark"></i> ant-dm
+                                    </small>
+                                {%- endif -%}
+                            </div>
+                            <div class="carousel-caption d-none d-md-block">
+                                {%- if post.abstract -%}
+                                    <p class="latest-blog-abstract"> {{ post.abstract }} </p>
+                                {%- else -%}
+                                    <p class="latest-blog-abstract"> </p>
+                                {%- endif -%}
+
+                            </div><!-- End Carousel caption-->
                         </div><!--end carousel item-->                               
                 {%- endfor -%}
               </div><!-- END ROW -->        

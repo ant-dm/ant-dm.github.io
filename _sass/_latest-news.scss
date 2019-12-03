@@ -18,10 +18,29 @@
             height: 25rem;
             width: 100%;
             overflow: hidden;
+            
             .post-thumbnail {
                 max-width: 100%;
             }
         }
+        .carousel-item .overlay {
+            position: absolute;
+            top: 15%;
+            right: 0%;
+            left: 5%;
+            width: 100%;
+        }
+        .carousel-caption {
+            top: 30% !important;
+            right: 0% !important;
+            left: 5% !important;
+            text-align: left !important;
+            .latest-blog-abstract {
+                font-size: 1rem;
+                
+            }
+        }
         
     }
+
 }

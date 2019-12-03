@@ -1,0 +1,59 @@
+<section class="latest-blog">
+        <div class="container">
+          
+          <div class="carousel" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="row no-gutters">
+                  {%- for post in site.posts limit: 3 -%}
+                    {%- if forloop.first == true -%}  
+                      <div class="carousel-item active">
+                    {%- else -%}
+                      <div class="carousel-item">
+                    {%- endif -%}
+                    <div class="img-container">
+                        <!-- col-12 col-sm-8 col-md-6 col-lg-4 -->
+                        <div class="card">
+                            <!-- card image-->
+                            {%- if post.thumbnail -%}
+                                <img class="card-img-top" src="{{ post.thumbnail }}">
+                            {%- else -%}
+                                <img class="card-img-top" src="http://www.gimmesomeoven.com/wp-content/uploads/2014/10/The-Best-Chicken-Enchiladas-Recipe-1-1.jpg">
+                            {%- endif -%}                
+                          <div class="card-img-overlay">
+                            <!-- card title-->
+                            {%- if post.title -%}
+                                <h4 class="card-title text-dark">{{ post.title }} </h4>
+                            {%- endif -%}
+                            {%- if post.author -%}
+                                <small class="text-muted small-css">
+                                    <i class="fas fa-users text-dark"></i> {{ post.author }}
+                                </small>
+                            {%- else -%}
+                                <small class="text-muted small-css">
+                                    <i class="fas fa-users text-dark"></i> ant-dm
+                                </small>
+                            {%- endif -%}
+                            <!-- card abstract-->
+                            {%- if post.abstract -%}
+                                <p class="card-text post-abstract"> {{ post.abstract }} </p>
+                            {%- else -%}
+                                <p class="card-text post-abstract"> </p>
+                            {%- endif -%}
+                              <!-- card button -->
+                              <a href=" {{ post.url }} " class=" btn btn-dark float-right">Read More</a>                    
+                          </div><!-- end card body-->
+                          <div class="card-footer text-muted d-flex justify-content-between bg-transparent border-top-0">
+                              <div class="date">
+                                {{ post.date | date: '%B %d, %Y' }}
+                              </div>
+                          </div><!--end card footer-->
+                        </div><!--end card-->      
+                      </div><!--end carousel item-->                               
+                </div><!-- end col -->
+                {%- endfor -%}
+              </div><!-- END ROW -->        
+          </div><!-- END carousel-inner -->    
+        </div><!-- END carousel-->
+      </div><!-- END container-->
+</section>
+      

@@ -1,6 +1,11 @@
 .latest-blog {
     background-color: $purple-002;
     .carousel {
-        height: 20rem;
+        height: 30rem;
+        width: auto;
+        overflow: hidden;
+        .card {
+            height: inherit;
+        }
     }
 }

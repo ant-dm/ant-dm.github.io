@@ -21,29 +21,9 @@ layout: base
     </div>
   </div>
 </header>
-<section class="latest-blog">
-  <div class="container">
-    <div class="carousel" data-ride="carousel">
-      <div class="carousel-inner">
-        {%- for post in site.posts limit: 3 -%}
-          {%- if forloop.first == true -%}
-            <div class="carousel-item active">
-          {%- else -%}
-            <div class="carousel-item">
-          {%- endif -%}
-            {%- if post.thumbnail -%}
-            <img class="d-block w-100" src="{{ post.thumbnail }}" alt="">
-            {%- else -%}
-            <img class="d-block w-100" src="http://www.gimmesomeoven.com/wp-content/uploads/2014/10/The-Best-Chicken-Enchiladas-Recipe-1-1.jpg">
-            {%- endif -%}
-          </div>
-        
-        {%- endfor -%}
-        </div>
-    </div>    
-  </div>
-  
-</section>
+
+<!-- latest news -->
+{%- include fragments/latest-news.html -%}
 
 <section id="about" class="sec-about text-center">
   <div class="container mt-3">

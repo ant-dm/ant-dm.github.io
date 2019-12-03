@@ -1,11 +1,27 @@
 .latest-blog {
-    background-color: $purple-002;
+    h2 {
+        font-size: 5rem;
+    }
+    .container-fluid {
+
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+       
+    }
+
     .carousel {
-        height: 30rem;
-        width: auto;
-        overflow: hidden;
-        .card {
-            height: inherit;
+        background-color: $purple-002;
+        padding-top: 0.2rem !important;
+        padding-bottom: 0.2rem !important;
+        
+        .item-container {
+            height: 25rem;
+            width: 100%;
+            overflow: hidden;
+            .post-thumbnail {
+                max-width: 100%;
+            }
         }
+        
     }
 }

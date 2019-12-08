@@ -1,10 +1,8 @@
 /* page-heading */
 .page-heading {
   position: relative;
-  height: auto;
+  height: 100vh;
   min-height: 40rem;
-  
-  padding-bottom: 5rem;
   background-attachment: scroll;
   color: $page-heading-def-text-color;
   h1 {
@@ -18,6 +16,9 @@
     color: rgba(255, 255, 255, 0.8);
     margin-top: 2rem;
     margin-bottom: 1rem;
+  }
+  .title-group {
+    padding-bottom: 15rem;
   }
   .logo {
     width: 25rem;
@@ -38,21 +39,7 @@
     */  
   }
   
-  .btn-about {
-    .fas {
-      margin-top: 20%;
-      color: $page-heading-btn-color;
-      border: 1rem;
-      border-color: $white;
-      font-size: 5rem;
-    }
-    text-transform: uppercase;
-    padding: 1.2rem 2.0rem;
-  }
-  .btn-primary {
-    background-color: $page-heading-btn-color !important;
-    border-color: $page-heading-btn-bor-color !important;
-  }
+  
   @media(min-width: 320px) {
     .logo {
       width: 18rem;

@@ -13,14 +13,14 @@
                     {%- endif -%}
                             <div class="item-container">
                                 {%- if post.thumbnail -%}
-                                    <img class="post-thumbnail" src="{{ post.thumbnail }}">
+                                    <img class="post-thumbnail img-muted-60" src="{{ post.thumbnail }}">
                                 {%- else -%}
-                                    <img class="post-thumbnail" src="http://www.gimmesomeoven.com/wp-content/uploads/2014/10/The-Best-Chicken-Enchiladas-Recipe-1-1.jpg">
+                                    <img class="post-thumbnail img-muted-60" src="http://www.gimmesomeoven.com/wp-content/uploads/2014/10/The-Best-Chicken-Enchiladas-Recipe-1-1.jpg">
                                 {%- endif -%}
                             </div>
                             <div class="overlay">
                                 {%- if post.title -%}
-                                    <h1 class="text-white mb-0">{{ post.title }}</h1>
+                                    <h1 class="text-white text-shadow-black mb-0">{{ post.title }}</h1>
                                 {%- endif -%}
                                 {%- if post.author -%}
                                     <small class="text-muted pl-2">
@@ -32,7 +32,7 @@
                                     </small>
                                 {%- endif -%}
                             </div>
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-none d-md-block text-shadow-black">
                                 {%- if post.abstract -%}
                                     <p class="latest-blog-abstract"> {{ post.abstract }} </p>
                                 {%- else -%}

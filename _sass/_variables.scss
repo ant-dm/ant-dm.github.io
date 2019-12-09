@@ -42,8 +42,14 @@ $team-img-border-radius: 50%;
 $team-img-border-color: linear-gradient(left top, crimson 0%, #f90 100%);
 $team-img-border-color2: linear-gradient(to top, #7F00FF 0%, #E100FF 100%);
 
-
-
 /* particles-js */
 $particles-bg-color: linear-gradient(to bottom,#001419 15%,#0E0432  100%);
 //#2B1047 85%,#471975 100%
+
+/* css */
+.text-shadow-black{
+    text-shadow: 2px 2px #000000;
+}
+.img-muted-60 {
+    filter: brightness(40%);
+}

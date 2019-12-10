@@ -27,17 +27,7 @@
       color: $purple-001;
       font-size: 1.0rem;
     }
-    .avatar {
-      width: $team-img-border-hw;
-      height: $team-img-border-hw;
-      object-fit:cover;
-      border: $team-img-border;
-      border-radius: $team-img-border-radius;
-      background-image: $team-img-border-color2;
-      background-origin: border-box;
-      background-clip: border-box, content-box;
-      position: relative;
-    }
+    
     .list-group-item {
       padding: 0.3rem 0.3rem !important;
       background-color: transparent !important;

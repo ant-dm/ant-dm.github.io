@@ -11,35 +11,49 @@
                     {%- else -%}
                         <div class="carousel-item">
                     {%- endif -%}
-                            <div class="item-container">
-                                {%- if post.thumbnail -%}
-                                    <img class="post-thumbnail img-muted-60" src="{{ post.thumbnail }}">
-                                {%- else -%}
-                                    <img class="post-thumbnail img-muted-60" src="http://www.gimmesomeoven.com/wp-content/uploads/2014/10/The-Best-Chicken-Enchiladas-Recipe-1-1.jpg">
-                                {%- endif -%}
-                            </div>
+                        <div class="latest-thumbnail-container">
+                            {%- if post.thumbnail -%}
+                                <img class="post-thumbnail filter-muted-60" src="{{ post.thumbnail }}">
+                            {%- else -%}
+                                <img class="post-thumbnail filter-muted-60" src="http://www.gimmesomeoven.com/wp-content/uploads/2014/10/The-Best-Chicken-Enchiladas-Recipe-1-1.jpg">
+                            {%- endif -%}
+                        </div><!-- END thumbnail container-->
                             <div class="overlay">
                                 {%- if post.title -%}
-                                    <h1 class="text-white text-shadow-black mb-0">{{ post.title }}</h1>
+                                    <p class="post-title text-white text-shadow-black mb-0 ">{{ post.title }}</p>
                                 {%- endif -%}
-                                {%- if post.author -%}
-                                    <small class="text-muted pl-2">
-                                        <i class="fas fa-users text-dark"></i> {{ post.author }}
+                                <div class="post-abstract">
+                                        {%- if post.abstract -%}
+                                            <p class="latest-blog-abstract"> {{ post.abstract }} </p>
+                                        {%- else -%}
+                                            <p class="latest-blog-abstract"> </p>
+                                        {%- endif -%}
+                                </div>
+                                <div class="d-flex">
+                                    <small class="p-2">
+                                
+                                            {%- if post.author == "RxnNode" -%}
+                                                <img src="../assets/img/team/logoRxnAvatar_250.png" alt="" class="avatar whr-small">
+                                            {%- elsif post.author == "夏雪" -%}
+                                                <img src="../assets/img/team/logosnow_250.png" alt="" class="avatar whr-small">
+                                            {%- else -%}
+                                                <i class="fas fa-users text-dark"></i>
+                                            {%- endif -%}
+                                            
                                     </small>
-                                {%- else -%}
-                                    <small class="text-muted pl-2">
-                                        <i class="fas fa-users text-dark"></i> ant-dm
-                                    </small>
-                                {%- endif -%}
-                            </div>
-                            <div class="carousel-caption d-none d-md-block text-shadow-black">
-                                {%- if post.abstract -%}
-                                    <p class="latest-blog-abstract"> {{ post.abstract }} </p>
-                                {%- else -%}
-                                    <p class="latest-blog-abstract"> </p>
-                                {%- endif -%}
-
-                            </div><!-- End Carousel caption-->
+                                    <div class="post-meta text-white p-2">
+                                        <div class="align-self-start">{{ post.author }}</div>
+                                        <div class="align-self-end"> {{ post.date }} </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-caption d-none d-md-block text-shadow-black">
+                                        
+        
+                                </div><!-- End Carousel caption-->
+                                
+                            </div><!-- END OVERLAY -->
+                            
                         </div><!--end carousel item-->                               
                 {%- endfor -%}
               </div><!-- END ROW -->        

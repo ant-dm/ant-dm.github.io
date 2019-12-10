@@ -50,6 +50,25 @@ $particles-bg-color: linear-gradient(to bottom,#001419 15%,#0E0432  100%);
 .text-shadow-black{
     text-shadow: 2px 2px #000000;
 }
-.img-muted-60 {
+.text-shadow-neon-pink {
+    text-shadow: 1.5px 1px black;
+}
+.filter-muted-60 {
     filter: brightness(40%);
 }
+.whr-small{
+    width: 36px !important;
+    height: 36px !important;
+    border: 2px solid transparent !important;
+}
+.avatar {
+    width: $team-img-border-hw;
+    height: $team-img-border-hw;
+    object-fit:cover;
+    border: $team-img-border;
+    border-radius: $team-img-border-radius;
+    background-image: $team-img-border-color2;
+    background-origin: border-box;
+    background-clip: border-box, content-box;
+    position: relative;
+  }

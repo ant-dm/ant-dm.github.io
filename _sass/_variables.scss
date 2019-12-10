@@ -56,6 +56,7 @@ $particles-bg-color: linear-gradient(to bottom,#001419 15%,#0E0432  100%);
 .filter-muted-60 {
     filter: brightness(40%);
 }
+.ellipsis { text-overflow: ellipsis; }
 .whr-small{
     width: 36px !important;
     height: 36px !important;

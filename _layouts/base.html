@@ -11,7 +11,7 @@
 
       {%- include fragments/set-Navbar.html-%}
 
-      {{ content }}
+      
 
 
     <div class="js">
@@ -22,10 +22,11 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script>
         {%- include scripts/libs/particles.js -%}
-        {%- include scripts/particles_load.js-%}
-        {%- include scripts/load.js-%}
+        {%- include scripts/particles_load.js -%}
+        {%- include scripts/load.js -%}
       </script>
     </div>
+    {{ content }}
   </body>
   <footer>
     {%- include footer/footer.html -%}
